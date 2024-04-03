@@ -1,5 +1,10 @@
 #include <math.h>
 
+// Função para calcular o discriminante
+float calcularDiscriminante(float a, float b, float c) {
+  return b * b - 4 * a * c;
+}
+
 // Função para calcular as raízes da equação
 void calcularRaizes(float a, float b, float c, float *x1, float *x2) {
   float delta = calcularDiscriminante(a, b, c);
